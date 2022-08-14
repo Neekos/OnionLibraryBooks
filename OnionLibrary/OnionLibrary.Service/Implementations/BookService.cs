@@ -26,9 +26,9 @@ namespace OnionLibrary.Service.Implementations
                var book = await _bookRepository.GetAll().FirstOrDefaultAsync(x => x.Id == id);
                 if (book == null)
                 {
-                    return BaseResponse<BookViewModel>(){
-                        BaseResponse.Description = "Book not Found";
-                        BaseResponse.Status = Domain.Enum.StatusCode.BookNotFound;
+                    return new BaseResponse<BookViewModel>() {
+                        Description = "Book not Found",
+                        Status = Domain.Enum.StatusCode.BookNotFound,
                     };
                 }
                 
@@ -43,9 +43,9 @@ namespace OnionLibrary.Service.Implementations
                     IdCategory = book.IdCategory,
                 };
 
-                return BaseResponse<BookViewModel>(){
-                    BaseResponse.Status = Domain.Enum.StatusCode.Ok;
-                    BaseResponse.Data = data;
+                return new BaseResponse<BookViewModel>() {
+                    Status = Domain.Enum.StatusCode.Ok,
+                    Data = data,
                 };
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace OnionLibrary.Service.Implementations
                 return new BaseResponse<Book>()
                 {
                     Description = $"[GetBook]: {ex.Message}",
-                    Status = Domain.Enum.StatusCode.Error
+                    Status = Domain.Enum.StatusCode.Error,
                 };
             }
 
