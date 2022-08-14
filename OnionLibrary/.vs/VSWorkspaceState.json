@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OnionLibrary"
+    "\\OnionLibrary",
+    "\\OnionLibrary.DAL"
   ],
-  "SelectedNode": "\\OnionLibrary\\Program.cs",
+  "SelectedNode": "\\OnionLibrary.DAL\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
