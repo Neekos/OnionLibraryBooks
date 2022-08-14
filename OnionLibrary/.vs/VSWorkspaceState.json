@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\OnionLibrary",
+    "\\OnionLibrary\\Views",
+    "\\OnionLibrary\\Views\\Book"
   ],
-  "SelectedNode": "\\OnionLibrary.sln",
+  "SelectedNode": "\\OnionLibrary\\Views\\Book\\DeleteBook.cshtml",
   "PreviewInSolutionExplorer": false
 }
