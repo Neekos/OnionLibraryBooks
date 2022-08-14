@@ -51,7 +51,12 @@ namespace OnionLibrary.DAL.Repositories
             //return _db.Books.ToList();
             //throw new NotImplementedException();
         }
-
+        public IQueryable<Book> GetAll()
+        {
+            return _db.Books;
+            //return _db.Books.ToList();
+            //throw new NotImplementedException();
+        }
         public async Task<Book> UpDate(Book entity)
         {
             _db.Books.Update(entity);

@@ -10,7 +10,8 @@ namespace OnionLibrary.DAL.Interfaces
     public interface IBaseRepository<T>
     {
         Task<bool> Create(T entity);
-        Task<T> Get(int id);
+        //Task<T> Get(int id);
+        IQueryable<T> GetAll();
 
         Task<IEnumerable<T>> Select();
 

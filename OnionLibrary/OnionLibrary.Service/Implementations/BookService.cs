@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using OnionLibrary.DAL.Interfaces;
 using OnionLibrary.Domain.Models;
 using OnionLibrary.Domain.Response;
@@ -19,23 +20,33 @@ namespace OnionLibrary.Service.Implementations
             _bookRepository = bookRepository;
         }
         public async Task<IBaseResponse<Book>> GetBook(int id)
-        {
-            var baseResponse = new BaseResponse<Book>();
-            
+        {   
             try
             {
-                var book = await _bookRepository.Get(id);
+               var book = await _bookRepository.GetAll().FirstOrDefaultAsync(x => x.Id == id);
                 if (book == null)
                 {
-                    baseResponse.Description = "Book not Found";
-                    baseResponse.Status = Domain.Enum.StatusCode.BookNotFound;
-                    return baseResponse;
+                    return BaseResponse<BookViewModel>(){
+                        BaseResponse.Description = "Book not Found";
+                        BaseResponse.Status = Domain.Enum.StatusCode.BookNotFound;
+                    };
                 }
-                baseResponse.Data = book;
-                baseResponse.Status = Domain.Enum.StatusCode.Ok;
+                
 
-                return baseResponse;
+                var data = new BookViewModel()
+                {
+                    Title = book.Title,
+                    Description = book.Description,
+                    img = book.img,
+                    IdUser = book.IdUser,
+                    IdShelf = book.IdShelf,
+                    IdCategory = book.IdCategory,
+                };
 
+                return BaseResponse<BookViewModel>(){
+                    BaseResponse.Status = Domain.Enum.StatusCode.Ok;
+                    BaseResponse.Data = data;
+                };
             }
             catch (Exception ex)
             {
