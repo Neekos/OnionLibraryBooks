@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {}
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj",
         "projectName": "OnionLibrary.DAL",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
         "projectName": "OnionLibrary.Domain",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -164,14 +164,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
         "projectName": "OnionLibrary.Service",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -192,11 +192,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj"
+              "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj"
               },
-              "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
+              "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
               }
             }
           }

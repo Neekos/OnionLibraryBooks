@@ -2150,11 +2150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary\\OnionLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary\\OnionLibrary.csproj",
       "projectName": "OnionLibrary",
-      "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary\\OnionLibrary.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary\\OnionLibrary.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2175,14 +2175,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj"
+            "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.DAL\\OnionLibrary.DAL.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
+            "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj"
             },
-            "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj"
+            "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj"
             }
           }
         }

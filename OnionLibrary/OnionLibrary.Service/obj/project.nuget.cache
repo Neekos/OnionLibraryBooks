@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kWOhyFPaaSx5jwwbowmd/8MuROtmCZS33mhMc2nbsxR2IXyaVNmAN9G8M74xcuHWEeuLq6aZtZJU61nR1mmyjQ==",
+  "dgSpecHash": "fvhPGiyO/pQv4LJyfKBO56Dg4i8trCOR/a/NJ7/I/C7124zQ7nnuwc2qjPdwaJGdl8K48x+K2YJ/+dhfyAdcEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Service\\OnionLibrary.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
