@@ -19,5 +19,6 @@ namespace OnionLibrary.Domain.ViewModels.Book
         public int IdUser { get; set; }
         public int IdShelf { get; set; }
         public int IdCategory { get; set; }
+        public IFormFile Img { get; set; }
     }
 }
