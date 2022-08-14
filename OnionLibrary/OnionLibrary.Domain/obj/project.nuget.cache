@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oAByf7r54WgHbzTVa0AJiUmmXv3QqyD+bDzyNQ1TKRdr1m4Lqda1B3W2EZC/LzasT0z9AVzlauiNPPpACe5K2Q==",
+  "dgSpecHash": "gQ/habV2AKJAFnLlhWgfuuPpV0GKtFXoasXBK8NzCUTMnmJmQK435byQ5aCA+e2QETq2eugZ0hPE2k+B1g8huQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

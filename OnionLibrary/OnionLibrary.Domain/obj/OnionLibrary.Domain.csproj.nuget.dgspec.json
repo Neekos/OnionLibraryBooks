@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {}
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
         "projectName": "OnionLibrary.Domain",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\OnionLibrary.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibrary\\OnionLibrary.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnionLibraryBooks\\OnionLibrary\\OnionLibrary.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

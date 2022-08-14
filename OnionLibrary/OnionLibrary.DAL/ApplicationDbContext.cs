@@ -19,5 +19,6 @@ namespace OnionLibrary.DAL
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Shelf> Shelves { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
