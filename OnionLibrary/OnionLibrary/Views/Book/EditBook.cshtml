@@ -1,0 +1,30 @@
+﻿@model OnionLibrary.Domain.Models.Book
+@{
+    ViewData["Title"] = "Book Page";
+}
+
+<div>
+    <form method="post" asp-action="EditBook">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <input asp-for="Title" placeholder="Имя"/>
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <input asp-for="Description" placeholder="Описание"/>
+            <span asp-validation-for="Description" class="text-danger"></span>
+            <input asp-for="img" placeholder="Фото" type="file" />
+            <span asp-validation-for="img" class="text-danger"></span>
+            <input asp-for="IdShelf" placeholder="Полка"/>
+            <span asp-validation-for="IdShelf" class="text-danger"></span>
+            <input asp-for="IdCategory" placeholder="Категория"/>
+            <span asp-validation-for="IdCategory" class="text-danger"></span>
+            <input asp-for="IdUser" placeholder="Читатель"/>
+            <span asp-validation-for="IdUser" class="text-danger"></span>
+            <button type="submit">ok</button>
+            <a asp-controller="Book" asp-action="Index">Back</a>
+        </div>
+    </form>
+</div>

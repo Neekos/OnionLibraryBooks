@@ -1,0 +1,18 @@
+﻿@model OnionLibrary.Domain.Models.Book
+@{
+    ViewData["Title"] = "Book Page";
+}
+
+<div class="MainBook">
+    <div class="group">
+        <div class="ImgBook">
+            <img src="~/img/@Model.img" alt=""  width="100%"/>
+        </div>
+        <div class="InfBook">
+            <h3 class="NameBook">@Model.Title</h3>
+            <hr />
+            <p class="desc">@Model.Description</p>
+        </div>
+    </div>
+    
+</div>

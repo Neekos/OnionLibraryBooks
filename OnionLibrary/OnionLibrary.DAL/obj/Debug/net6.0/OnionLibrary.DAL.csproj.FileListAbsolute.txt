@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.DAL.deps.json
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.DAL.dll
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.DAL.pdb
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.AssemblyInfo.cs
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.dll
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\refint\OnionLibrary.DAL.dll
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.pdb
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\ref\OnionLibrary.DAL.dll
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.DAL.runtimeconfig.json
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.Domain.dll
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\bin\Debug\net6.0\OnionLibrary.Domain.pdb
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.csproj.CopyComplete
+C:\Users\User\source\repos\OnionLibrary\OnionLibrary.DAL\obj\Debug\net6.0\OnionLibrary.DAL.genruntimeconfig.cache
