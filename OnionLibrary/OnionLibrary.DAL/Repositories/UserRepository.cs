@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnionLibrary.DAL.Repositories
 {
-    public class UserRepository : IBaseRepository
+    public class UserRepository : IUserRepository
     {
         private readonly ApplicationDbContext _db;
         public UserRepository(ApplicationDbContext db)
