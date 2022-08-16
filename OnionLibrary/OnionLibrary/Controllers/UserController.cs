@@ -10,18 +10,18 @@ using OnionLibrary.Domain.ViewModels.User;
 
 namespace OnionLibrary.Controllers
 {
-    public class BookController:Controller
+    public class UserController:Controller
     {
-        private readonly IBookService _bookServices;
-        public BookController(IBookService bookServices)
+        private readonly IUserService _userServices;
+        public UserController(IUserService userServices)
         {
-            _bookServices = bookServices;
+            _userServices = userServices;
         }
 
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var response = await _bookServices.GetBooks();
+            var response = await _userServices.GetBooks();
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -33,7 +33,7 @@ namespace OnionLibrary.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBook(int id)
         {
-            var response = await _bookServices.GetBook(id);
+            var response = await _userServices.GetBook(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -45,7 +45,7 @@ namespace OnionLibrary.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteBook(int id)
         {
-            var response = await _bookServices.DeleteBook(id);
+            var response = await _userServices.DeleteBook(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return RedirectToAction("Index");
@@ -62,7 +62,7 @@ namespace OnionLibrary.Controllers
             {
                 return View();
             }
-            var response = await _bookServices.GetBook(id);
+            var response = await _userServices.GetBook(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -72,18 +72,18 @@ namespace OnionLibrary.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditBook(BookViewModel model)
+        public async Task<IActionResult> EditBook(UserViewModel model)
         {
             if (ModelState.IsValid)
             {
                 if (model.Id == 0)
                 {
                     
-                        await _bookServices.CreateBook(model);
+                        await _userServices.CreateBook(model);
                 }
                 else
                 {
-                    await _bookServices.EditBook(model.Id, model);
+                    await _userServices.EditBook(model.Id, model);
                 }
             }
             return RedirectToAction("Index");

@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\OnionLibraryBooks\OnionLibrary\OnionLibrary
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Book/CreateBook.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Book/DeleteBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xEZWxldGVCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
