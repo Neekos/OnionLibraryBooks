@@ -173,7 +173,12 @@ namespace OnionLibrary.Service.Implementations
                     return baseResponse;
                 }
                 user.Name = model.Name;
-                
+                user.Surname = model.Surname;
+                user.Patronymic = model.Patronymic;
+                user.Avatar = model.Avatar;
+                user.Birthday = model.Birthday;
+                user.DateRegistration = model.DateRegistration;
+
 
                 await _userRepository.UpDate(user);
                 return baseResponse;

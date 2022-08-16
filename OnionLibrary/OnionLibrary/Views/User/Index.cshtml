@@ -1,0 +1,40 @@
+﻿@model IEnumerable<OnionLibrary.Domain.Models.User>
+@{
+    ViewData["Title"] = "User Page";
+}
+
+<div class="btn">
+    <a asp-area="" asp-controller="User" asp-action="EditBook" class="btn-text">+</a>
+</div>
+ 
+@{
+    foreach (var item in Model)
+    {
+    <div class="book">
+                <div class="inf">
+                    <div class="img">
+                    <img src="~/img/User/@item.Avatar" alt=""  width="100%"/>
+                    </div>
+                    <div class="desc">
+                        <h3 class="title"><a asp-area="" asp-controller="User" asp-action="GetBook" asp-route-id="@item.Id" class="btn-text">@item.Name</a></h3>
+                        <hr />
+                        <p>@item.Surname</p>
+                        <hr />
+                        <p>#Тут #будут #хэштеги</p>
+                    </div>
+                </div>
+                <div class="btn-panel">
+                    @if(User.IsInRole("Admin")){
+                        <div class="btn" >
+                            <a asp-area="" asp-controller="User" asp-action="EditBook" asp-route-id="@item.Id" class="btn-text">...</a>
+                        </div>
+                        <div class="btn" >
+                            <a asp-area="" asp-controller="User" asp-action="DeleteBok" asp-route-id="@item.Id" class="btn-text">-</a>
+                        </div>
+                    }
+                    
+                </div>
+                    
+    </div>
+    }
+}

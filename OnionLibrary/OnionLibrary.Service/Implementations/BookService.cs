@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OnionLibrary.DAL.Interfaces;
 using OnionLibrary.Domain.Models;
 using OnionLibrary.Domain.Response;
-using OnionLibrary.Domain.ViewModels.User;
+using OnionLibrary.Domain.ViewModels.Book;
 using OnionLibrary.Service.Interfaces;
 
 namespace OnionLibrary.Service.Implementations

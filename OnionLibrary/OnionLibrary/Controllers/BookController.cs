@@ -6,7 +6,7 @@ using OnionLibrary.Service.Interfaces;
 using OnionLibrary.Domain.Response;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
-using OnionLibrary.Domain.ViewModels.User;
+using OnionLibrary.Domain.ViewModels.Book;
 
 namespace OnionLibrary.Controllers
 {

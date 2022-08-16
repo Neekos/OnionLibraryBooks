@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnionLibrary.Domain.ViewModels.User
+namespace OnionLibrary.Domain.ViewModels.Book
 {
     public class BookViewModel
     {
