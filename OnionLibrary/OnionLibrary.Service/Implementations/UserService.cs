@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OnionLibrary.DAL.Interfaces;
 using OnionLibrary.Domain.Models;
 using OnionLibrary.Domain.Response;
-using OnionLibrary.Domain.ViewModels.Book;
+using OnionLibrary.Domain.ViewModels.User;
 using OnionLibrary.Service.Interfaces;
 
 namespace OnionLibrary.Service.Implementations
@@ -115,12 +115,12 @@ namespace OnionLibrary.Service.Implementations
             {
                 var user = new User()
                 {
-                    Name = UserViewModel.Name,
-                    Surname = UserViewModel.Surname,
-                    Patronymic = UserViewModel.Patronymic,
-                    Avatar = UserViewModel.Avatar,
-                    Birthday = UserViewModel.Birthday,
-                    DateRegistration = UserViewModel.DateRegistration
+                    Name = userViewModel.Name,
+                    Surname = userViewModel.Surname,
+                    Patronymic = userViewModel.Patronymic,
+                    Avatar = userViewModel.Avatar,
+                    Birthday = userViewModel.Birthday,
+                    DateRegistration = userViewModel.DateRegistration
                 };
                 await _userRepository.Create(user);
             }

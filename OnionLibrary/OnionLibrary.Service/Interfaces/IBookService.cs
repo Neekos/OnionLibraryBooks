@@ -1,6 +1,6 @@
 ﻿using OnionLibrary.Domain.Models;
 using OnionLibrary.Domain.Response;
-using OnionLibrary.Domain.ViewModels.Book;
+using OnionLibrary.Domain.ViewModels.User;
 
 namespace OnionLibrary.Service.Interfaces
 {
