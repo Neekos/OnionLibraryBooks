@@ -9,52 +9,59 @@ using System.Threading.Tasks;
 
 namespace OnionLibrary.DAL.Repositories
 {
-    public class UserRepository : IBookRepository
+    public class UserRepository : IBaseRepository
     {
         private readonly ApplicationDbContext _db;
         public UserRepository(ApplicationDbContext db)
         {
+            //Переменная для использования модели из базы данных
             _db = db;
         }
 
-        public async Task<bool> Create(Book entity)
+        public async Task<bool> Create(User entity)
         {
-            await _db.Books.AddAsync(entity);
+            //создание нового юзера
+            await _db.Users.AddAsync(entity);
             await _db.SaveChangesAsync();
             return true;
             //throw new NotImplementedException();
         }
 
-        public async Task<bool> Delete(Book entity)
+        public async Task<bool> Delete(User entity)
         {
-            _db.Books.Remove(entity);
+            //Удаление юзера
+            _db.Users.Remove(entity);
             await _db.SaveChangesAsync();
             return true;
             //throw new NotImplementedException();
         }
 
-        public async Task<Book> Get(int id)
+        public async Task<User> Get(int id)
         {
-            return await _db.Books.FirstOrDefaultAsync(x => x.Id == id);
+            //Получаем юзера по Id
+            return await _db.Users.FirstOrDefaultAsync(x => x.Id == id);
             //throw new NotImplementedException();
         }
 
-        public async Task<Book> GetByName(string name)
+        public async Task<User> GetByName(string name)
         {
-            return await _db.Books.FirstOrDefaultAsync(x => x.Title == name);
+            //Получить юзера по имени - но метод будет заменен на запрос из бд
+            return await _db.Users.FirstOrDefaultAsync(x => x.Name == name);
             //throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Book>> Select()
+        public async Task<IEnumerable<User>> Select()
         {
-            return await _db.Books.ToListAsync();
+            //получаем колекцию юзеров
+            return await _db.Users.ToListAsync();
             //return _db.Books.ToList();
             //throw new NotImplementedException();
         }
 
-        public async Task<Book> UpDate(Book entity)
+        public async Task<User> UpDate(User entity)
         {
-            _db.Books.Update(entity);
+            //изменение данных юзера
+            _db.Users.Update(entity);
             await _db.SaveChangesAsync();
             return entity;
             //throw new NotImplementedException();
