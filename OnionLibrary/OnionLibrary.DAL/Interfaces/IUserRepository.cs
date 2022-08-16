@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace OnionLibrary.DAL.Interfaces
 {
-    public interface IUserRepository:IBaseRepository<Book>
+    public interface IUserRepository:IBaseRepository<User>
     {
-        Task<Book> GetByName(string name);
+        Task<User> GetByName(string name);
     }
 }
