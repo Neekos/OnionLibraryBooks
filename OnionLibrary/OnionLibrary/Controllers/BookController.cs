@@ -72,7 +72,7 @@ namespace OnionLibrary.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditBook(BookViewModel model)
+        public async Task<IActionResult> EditBook(UserViewModel model)
         {
             if (ModelState.IsValid)
             {
