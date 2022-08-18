@@ -2,6 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\OnionLibrary",
+    "\\OnionLibrary.Domain",
+    "\\OnionLibrary.Domain\\Models",
     "\\OnionLibrary\\Views",
     "\\OnionLibrary\\Views\\Book"
   ],
