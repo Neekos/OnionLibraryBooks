@@ -53,7 +53,10 @@ namespace OnionLibrary.Service.Implementations
         public async Task<IBaseResponse<bool>> DeleteShelf(int id)
         {
             //созадем  новый объект	
-            var baseResponsе = new BaseResponse<bool>();
+            var baseResponsе = new BaseResponse<bool>()
+            {
+                Data = true
+            };
             //проверяем на исключение
             try
             {
@@ -72,7 +75,7 @@ namespace OnionLibrary.Service.Implementations
                 //вызываем метод джинерик и удаляем обЪект
                 await _shelfRepository.Delete(shelf);
                 //возвращаем результат работы
-                //return baseResponsе;
+                return baseResponsе;
             }
             catch (Exception ex)
             {
@@ -85,7 +88,6 @@ namespace OnionLibrary.Service.Implementations
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
-                return baseResponsе;
         }
 
         public async Task<IBaseResponse<Shelf>> EditShelf(int id, ShelfViewModel model)

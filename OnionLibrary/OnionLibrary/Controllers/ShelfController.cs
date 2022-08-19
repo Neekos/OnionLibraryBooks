@@ -102,6 +102,7 @@ namespace OnionLibrary.Controllers
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteShelf(int id)
         {
+          
             var response = await _shelfServices.DeleteShelf(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {

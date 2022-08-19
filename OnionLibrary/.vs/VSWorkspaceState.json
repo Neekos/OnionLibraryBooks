@@ -3,14 +3,15 @@
     "",
     "\\OnionLibrary",
     "\\OnionLibrary.DAL",
+    "\\OnionLibrary.DAL\\Interfaces",
     "\\OnionLibrary.Domain",
-    "\\OnionLibrary.Domain\\Response",
+    "\\OnionLibrary.Domain\\Models",
+    "\\OnionLibrary.Domain\\ViewModels",
     "\\OnionLibrary.Domain\\ViewModels\\Shelf",
-    "\\OnionLibrary.Domain\\ViewModels\\User",
     "\\OnionLibrary.Service",
-    "\\OnionLibrary.Service\\Interfaces",
-    "\\OnionLibrary\\Controllers"
+    "\\OnionLibrary.Service\\Implementations",
+    "\\OnionLibrary\\Models"
   ],
-  "SelectedNode": "\\OnionLibrary.Service\\Interfaces\\IUserService.cs",
+  "SelectedNode": "\\OnionLibrary.sln",
   "PreviewInSolutionExplorer": false
 }
