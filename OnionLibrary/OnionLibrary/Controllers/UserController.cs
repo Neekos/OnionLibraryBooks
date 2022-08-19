@@ -21,7 +21,7 @@ namespace OnionLibrary.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var response = await _userServices.GetBooks();
+            var response = await _userServices.GetUsers();
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -31,9 +31,9 @@ namespace OnionLibrary.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetBook(int id)
+        public async Task<IActionResult> GetUser(int id)
         {
-            var response = await _userServices.GetBook(id);
+            var response = await _userServices.GetUser(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -43,9 +43,9 @@ namespace OnionLibrary.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> DeleteBook(int id)
+        public async Task<IActionResult> DeleteUser(int id)
         {
-            var response = await _userServices.DeleteBook(id);
+            var response = await _userServices.DeleteUser(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return RedirectToAction("Index");
@@ -56,13 +56,13 @@ namespace OnionLibrary.Controllers
 
         [HttpGet]
         //[Authorize(Roles = "Admin")]
-        public async Task<IActionResult> EditBook(int id)
+        public async Task<IActionResult> EditUser(int id)
         {
             if(id == 0)
             {
                 return View();
             }
-            var response = await _userServices.GetBook(id);
+            var response = await _userServices.GetUser(id);
             if (response.Status == Domain.Enum.StatusCode.Ok)
             {
                 return View(response.Data);
@@ -72,18 +72,18 @@ namespace OnionLibrary.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditBook(UserViewModel model)
+        public async Task<IActionResult> EditUser(UserViewModel model)
         {
             if (ModelState.IsValid)
             {
                 if (model.Id == 0)
                 {
                     
-                        await _userServices.CreateBook(model);
+                        await _userServices.CreateUser(model);
                 }
                 else
                 {
-                    await _userServices.EditBook(model.Id, model);
+                    await _userServices.EditUser(model.Id, model);
                 }
             }
             return RedirectToAction("Index");
