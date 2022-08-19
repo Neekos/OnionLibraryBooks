@@ -6,10 +6,10 @@ namespace OnionLibrary.Service.Interfaces
 {
     public interface IUserService
     {
-        Task<IBaseResponse<IEnumerable<User>>> GetBooks();
-        Task<IBaseResponse<User>> GetBook(int id);
-        Task<IBaseResponse<bool>> DeleteBook(int id);
-        Task<IBaseResponse<UserViewModel>> CreateBook(UserViewModel bookViewModal);
-        Task<IBaseResponse<User>> EditBook(int id, UserViewModel model);
+        Task<IBaseResponse<IEnumerable<User>>> GetUsers();
+        Task<IBaseResponse<User>> GetUser(int id);
+        Task<IBaseResponse<bool>> DeleteUser(int id);
+        Task<IBaseResponse<UserViewModel>> CreateUser(UserViewModel bookViewModal);
+        Task<IBaseResponse<User>> EditUser(int id, UserViewModel model);
     }
 }

@@ -18,7 +18,7 @@ namespace OnionLibrary.Service.Implementations
         {
             _userRepository = userRepository;
         }
-        public async Task<IBaseResponse<User>> GetBook(int id)
+        public async Task<IBaseResponse<User>> GetUser(int id)
         {
             var baseResponse = new BaseResponse<User>();
             
@@ -41,7 +41,7 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<User>()
                 {
-                    Description = $"[GetBook]: {ex.Message}",
+                    Description = $"[GetUser]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
@@ -49,7 +49,7 @@ namespace OnionLibrary.Service.Implementations
         }
 
 
-        public async Task<IBaseResponse<User>> GetByNameBook(string name)
+        public async Task<IBaseResponse<User>> GetByNameUser(string name)
         {
             var baseResponse = new BaseResponse<User>();
 
@@ -72,14 +72,14 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<User>()
                 {
-                    Description = $"[GetByNameBook]: {ex.Message}",
+                    Description = $"[GetByNameUsers]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
 
         }
 
-        public async Task<IBaseResponse<IEnumerable<User>>> GetBooks()
+        public async Task<IBaseResponse<IEnumerable<User>>> GetUsers()
         {
             var baseResponse = new BaseResponse<IEnumerable<User>>();
             try
@@ -101,14 +101,14 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<IEnumerable<User>>()
                 {
-                    Description = $"[GetBooks]: {ex.Message}",
+                    Description = $"[GetUsers]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
             
         }
 
-        public async Task<IBaseResponse<UserViewModel>> CreateBook(UserViewModel userViewModel)
+        public async Task<IBaseResponse<UserViewModel>> CreateUser(UserViewModel userViewModel)
         {
             var baseResponse = new BaseResponse<UserViewModel>();
             try
@@ -128,14 +128,14 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<UserViewModel>()
                 {
-                    Description = $"[CreateBook]: {ex.Message}",
+                    Description = $"[CreateUser]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
             return baseResponse;
         }
 
-        public async Task<IBaseResponse<bool>> DeleteBook(int id)
+        public async Task<IBaseResponse<bool>> DeleteUser(int id)
         {
             var baseResponse = new BaseResponse<bool>();
             try
@@ -154,13 +154,13 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<bool>()
                 {
-                    Description = $"[DeleteBook]: {ex.Message}",
+                    Description = $"[DeleteUser]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }
         }
 
-        public async Task<IBaseResponse<User>> EditBook(int id, UserViewModel model)
+        public async Task<IBaseResponse<User>> EditUser(int id, UserViewModel model)
         {
             var baseResponse = new BaseResponse<User>();
             try
@@ -187,7 +187,7 @@ namespace OnionLibrary.Service.Implementations
             {
                 return new BaseResponse<User>()
                 {
-                    Description = $"[EditBook]: {ex.Message}",
+                    Description = $"[EditUser]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error
                 };
             }

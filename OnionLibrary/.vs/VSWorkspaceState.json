@@ -2,11 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\OnionLibrary",
+    "\\OnionLibrary.DAL",
     "\\OnionLibrary.Domain",
-    "\\OnionLibrary.Domain\\Models",
-    "\\OnionLibrary\\Views",
-    "\\OnionLibrary\\Views\\Book"
+    "\\OnionLibrary.Domain\\Response",
+    "\\OnionLibrary.Domain\\ViewModels\\Shelf",
+    "\\OnionLibrary.Domain\\ViewModels\\User",
+    "\\OnionLibrary.Service",
+    "\\OnionLibrary.Service\\Interfaces",
+    "\\OnionLibrary\\Controllers"
   ],
-  "SelectedNode": "\\OnionLibrary.sln",
+  "SelectedNode": "\\OnionLibrary.Service\\Interfaces\\IUserService.cs",
   "PreviewInSolutionExplorer": false
 }
