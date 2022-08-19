@@ -18,6 +18,6 @@ namespace OnionLibrary.Domain.Response
     public interface IBaseResponse<T>
     {
         T Data { get; set; }
-        StatusCode Status { get; }
+        StatusCode Status { get; } 
     }
 }
