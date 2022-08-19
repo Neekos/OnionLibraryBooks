@@ -12,7 +12,7 @@
     <div class="book">
                     <div class="inf">
                         <div class="desc">
-                        <h3 class="title"><a asp-area="" asp-controller="Book" asp-action="Index"  class="btn-text">@item.Title</a></h3>
+                        <h3 class="title"><a asp-area="" asp-controller="Shelf" asp-action="Details" asp-route-id="@item.Id" class="btn-text">@item.Title</a></h3>
                         </div>
                     </div>
                     <div class="btn-panel">
@@ -23,13 +23,7 @@
                             <div class="btn" >
                                 <a asp-area="" asp-controller="Shelf" asp-action="Delete" asp-route-id="@item.Id" class="btn-text">-</a>
                             </div>
-                        }
-                        <div class="btn">
-                            <a asp-area="" asp-controller="Shelf" asp-action="Edit" asp-route-id="@item.Id" class="btn-text">...</a>
-                        </div>
-                        <div class="btn">
-                            <a asp-area="" asp-controller="Shelf" asp-action="Delete" asp-route-id="@item.Id" class="btn-text">-</a>
-                        </div>
+                    }
                         
                     </div>
                         

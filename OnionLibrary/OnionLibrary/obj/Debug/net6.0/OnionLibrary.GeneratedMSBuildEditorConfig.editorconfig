@@ -47,6 +47,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Shelf/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbGZcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Shelf/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbGZcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Shelf/Ditails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbGZcRGl0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Shelf/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbGZcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/source/repos/OnionLibraryBooks/OnionLibrary/OnionLibrary/Views/Shelf/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbGZcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

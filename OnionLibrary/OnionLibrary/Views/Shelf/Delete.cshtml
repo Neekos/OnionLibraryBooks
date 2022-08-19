@@ -1,0 +1,19 @@
+﻿@model OnionLibrary.Domain.Models.Shelf
+@{
+    ViewData["Title"] = "Shelf Page";
+}
+<div>
+    <form method="post" asp-action="DeleteShelf">
+        <div class="row pb-2">
+            <h2 class="text-primary">Delete</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class="mb-3">
+            <input disabled asp-for="Title" placeholder="Имя" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <button type="submit" >Delete</button>
+        <a asp-controller="Shelf" asp-action="Index">Back</a>
+    </form>
+</div>

@@ -60,12 +60,7 @@ namespace OnionLibrary.Controllers
         public async Task<IActionResult> CreateShelf(ShelfViewModel model)
         {
             var response = await _shelfServices.CreateShelf(model);
-            if (response.Status == Domain.Enum.StatusCode.Ok)
-            {
-                return RedirectToAction("Index");
-
-            }
-            return RedirectToAction("Error");
+            return RedirectToAction("Index");
         }
 
         // GET: ShelfController/Edit/5
@@ -83,16 +78,11 @@ namespace OnionLibrary.Controllers
 
         // POST: ShelfController/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> EditShelf(ShelfViewModel model)
         {
             var response = await _shelfServices.EditShelf(model.Id, model);
-            if (response.Status == Domain.Enum.StatusCode.Ok)
-            {
-                return RedirectToAction("Index");
-
-            }
-            return RedirectToAction("Error");
+            return RedirectToAction("Index");
         }
 
         // GET: ShelfController/Delete/5
@@ -109,7 +99,7 @@ namespace OnionLibrary.Controllers
 
         // POST: ShelfController/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteShelf(int id)
         {
             var response = await _shelfServices.DeleteShelf(id);
