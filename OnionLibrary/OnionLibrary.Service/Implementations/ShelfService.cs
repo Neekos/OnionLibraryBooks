@@ -68,10 +68,11 @@ namespace OnionLibrary.Service.Implementations
                     //записываем ошибку
                     baseResponsе.Description = "Shelf not found";
                     //устанавливаем статус 
-                    baseResponsе.Status = Domain.Enum.StatusCode.Ok;
+                    baseResponsе.Status = Domain.Enum.StatusCode.ShelfNotFound;
                     //возвращаем ошибку
                     return baseResponsе;
                 }
+                baseResponsе.Status = Domain.Enum.StatusCode.Ok;
                 //вызываем метод джинерик и удаляем обЪект
                 await _shelfRepository.Delete(shelf);
                 //возвращаем результат работы

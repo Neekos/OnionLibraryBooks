@@ -10,6 +10,7 @@ namespace OnionLibrary.Domain.Enum
     {
         BookNotFound = 0,
         UserNotFound = 1,
+        ShelfNotFound = 2,
         Ok = 200,
         NotFound = 404,
         Error = 500,
