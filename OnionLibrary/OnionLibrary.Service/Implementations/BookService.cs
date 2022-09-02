@@ -144,9 +144,10 @@ namespace OnionLibrary.Service.Implementations
                 if (book == null)
                 {
                     baseResponse.Description = "Book not Found";
-                    baseResponse.Status = Domain.Enum.StatusCode.Ok;
+                    baseResponse.Status = Domain.Enum.StatusCode.BookNotFound;
                     return baseResponse;
                 }
+                baseResponse.Status = Domain.Enum.StatusCode.Ok;
                 await _bookRepository.Delete(book);//не понятно надо разобратся
                 return baseResponse;
             }
@@ -160,9 +161,9 @@ namespace OnionLibrary.Service.Implementations
             }
         }
 
-        public async Task<IBaseResponse<Book>> EditBook(int id, BookViewModel model)
+        public async Task<IBaseResponse<BookViewModel>> EditBook(int id, BookViewModel model)
         {
-            var baseResponse = new BaseResponse<Book>();
+            var baseResponse = new BaseResponse<BookViewModel>();
             try
             {
                 var book = await _bookRepository.Get(id);
@@ -172,19 +173,20 @@ namespace OnionLibrary.Service.Implementations
                     baseResponse.Status = Domain.Enum.StatusCode.BookNotFound;
                     return baseResponse;
                 }
+                book.Id = model.Id;
                 book.Title = model.Title;
                 book.Description = model.Description;
                 book.img = model.img;
                 book.IdUser = model.IdUser;
                 book.IdShelf = model.IdShelf;
                 book.IdCategory = model.IdCategory;
-
+                baseResponse.Status = Domain.Enum.StatusCode.Ok;
                 await _bookRepository.UpDate(book);
                 return baseResponse;
             }
             catch (Exception ex)
             {
-                return new BaseResponse<Book>()
+                return new BaseResponse<BookViewModel>()
                 {
                     Description = $"[EditBook]: {ex.Message}",
                     Status = Domain.Enum.StatusCode.Error

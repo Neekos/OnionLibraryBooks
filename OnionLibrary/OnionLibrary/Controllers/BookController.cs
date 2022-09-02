@@ -42,7 +42,8 @@ namespace OnionLibrary.Controllers
             return RedirectToAction("Error");
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
+        [HttpGet]
         public async Task<IActionResult> DeleteBook(int id)
         {
             var response = await _bookServices.DeleteBook(id);

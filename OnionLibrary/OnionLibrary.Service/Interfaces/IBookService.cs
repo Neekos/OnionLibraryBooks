@@ -10,6 +10,6 @@ namespace OnionLibrary.Service.Interfaces
         Task<IBaseResponse<Book>> GetBook(int id);
         Task<IBaseResponse<bool>> DeleteBook(int id);
         Task<IBaseResponse<BookViewModel>> CreateBook(BookViewModel bookViewModal);
-        Task<IBaseResponse<Book>> EditBook(int id, BookViewModel model);
+        Task<IBaseResponse<BookViewModel>> EditBook(int id, BookViewModel model);
     }
 }
